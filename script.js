@@ -1,3 +1,5 @@
+//Looks great! 
+
 // Menu data structure
 var menuLinks = [
     {text: 'about', href: '/about'},
@@ -24,9 +26,9 @@ topMenuEl.style.backgroundColor = "var(--top-menu-bg)"
 topMenuEl.classList.add("flex-around")
 
 
-
+//newLink can be a const
   menuLinks.forEach((item) => {
-    let newLink =document.createElement("a")
+    const newLink =document.createElement("a")
     newLink.setAttribute("href", item.href)
     newLink.textContent = (item.text)
     topMenuEl.append(newLink)
